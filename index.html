@@ -4,12 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EasyShop</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
 body{background:#f5f7fa}
 
+/* HEADER */
 header{
   background:#0d1b2a;
   color:#fff;
@@ -19,33 +21,30 @@ header{
   align-items:center;
 }
 
-header h1{font-size:24px}
-
 nav a{
   color:#fff;
   margin:0 15px;
   text-decoration:none;
-  font-weight:500;
 }
 
+/* HERO */
 .hero{
-  background:url('https://images.unsplash.com/photo-1607083206968-13611e3d76db') center/cover;
+  background:url('https://picsum.photos/1200/400?shopping') center/cover;
   height:300px;
   display:flex;
   align-items:center;
   justify-content:center;
   color:#fff;
-  text-align:center;
 }
 
-.hero h2{font-size:36px;background:rgba(0,0,0,0.5);padding:10px 20px;border-radius:10px}
+.hero h2{
+  background:rgba(0,0,0,0.5);
+  padding:10px 20px;
+  border-radius:10px;
+}
 
+/* PRODUCTS */
 .container{padding:40px}
-
-.section-title{
-  margin-bottom:20px;
-  font-size:24px;
-}
 
 .products{
   display:grid;
@@ -74,9 +73,7 @@ nav a{
   text-align:center;
 }
 
-.card-content h3{margin-bottom:10px}
-
-.price{color:#2a9d8f;font-weight:bold;margin-bottom:10px}
+.price{color:#2a9d8f;font-weight:bold}
 
 .btn{
   background:#e63946;
@@ -87,8 +84,6 @@ nav a{
   cursor:pointer;
 }
 
-.btn:hover{background:#d62828}
-
 footer{
   background:#0d1b2a;
   color:#fff;
@@ -96,7 +91,6 @@ footer{
   padding:15px;
   margin-top:40px;
 }
-
 </style>
 </head>
 
@@ -117,12 +111,13 @@ footer{
 </div>
 
 <div class="container">
-  <h2 class="section-title">🔥 Trending Products</h2>
+  <h2>🔥 Trending Products</h2>
 
   <div class="products">
 
+    <!-- Electronics -->
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+      <img src="https://picsum.photos/300/200?phone">
       <div class="card-content">
         <h3>Smartphone</h3>
         <p class="price">₹10,000</p>
@@ -131,7 +126,7 @@ footer{
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
+      <img src="https://picsum.photos/300/200?laptop">
       <div class="card-content">
         <h3>Laptop</h3>
         <p class="price">₹40,000</p>
@@ -139,8 +134,9 @@ footer{
       </div>
     </div>
 
+    <!-- Shoes -->
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
+      <img src="https://picsum.photos/300/200?shoes">
       <div class="card-content">
         <h3>Nike Shoes</h3>
         <p class="price">₹2,500</p>
@@ -149,7 +145,7 @@ footer{
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1528701800489-20be3c5c2c1f">
+      <img src="https://picsum.photos/300/200?sneakers">
       <div class="card-content">
         <h3>Adidas Shoes</h3>
         <p class="price">₹3,000</p>
@@ -157,8 +153,9 @@ footer{
       </div>
     </div>
 
+    <!-- Clothing -->
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
+      <img src="https://picsum.photos/300/200?tshirt">
       <div class="card-content">
         <h3>T-Shirt</h3>
         <p class="price">₹800</p>
@@ -167,7 +164,7 @@ footer{
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246">
+      <img src="https://picsum.photos/300/200?jeans">
       <div class="card-content">
         <h3>Jeans</h3>
         <p class="price">₹1,500</p>
@@ -182,7 +179,7 @@ footer{
   <p>© 2026 EasyShop | Powered by Watson Assistant 🤖</p>
 </footer>
 
-<!-- Watson Chatbot -->
+<!-- 🤖 Watson Assistant -->
 <script>
 window.watsonAssistantChatOptions = {
   integrationID: "4b4b1c05-b5e1-45ce-8447-f4dae399580a",
@@ -190,6 +187,7 @@ window.watsonAssistantChatOptions = {
   serviceInstanceID: "cefdacbe-1323-420d-8ae8-9eff2c0e2398",
   onLoad: async (instance) => { await instance.render(); }
 };
+
 setTimeout(function(){
   const t=document.createElement('script');
   t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" 
