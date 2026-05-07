@@ -5,116 +5,59 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EasyShop Shoes</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
 <style>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
-
 body{
-    background:#f4f4f4;
+    margin:0;
+    font-family:Arial;
+    background:#f5f5f5;
 }
-
-/* HEADER */
 
 header{
     background:#111827;
     color:white;
-    padding:20px 50px;
+    padding:20px;
     display:flex;
     justify-content:space-between;
-    align-items:center;
-}
-
-.logo{
-    font-size:28px;
-    font-weight:bold;
 }
 
 nav a{
     color:white;
     text-decoration:none;
-    margin-left:25px;
-    font-size:16px;
-    transition:0.3s;
+    margin-left:20px;
 }
-
-nav a:hover{
-    color:#f59e0b;
-}
-
-/* HERO SECTION */
 
 .hero{
-    height:400px;
-    background:url('images/banner.jpg') center/cover;
+    height:350px;
+    background:url('images/banner.jpg');
+    background-size:cover;
+    background-position:center;
     display:flex;
     justify-content:center;
     align-items:center;
-    text-align:center;
     color:white;
-}
-
-.hero-content{
-    background:rgba(0,0,0,0.6);
-    padding:30px;
-    border-radius:15px;
 }
 
 .hero h1{
-    font-size:50px;
+    background:rgba(0,0,0,0.5);
+    padding:20px;
 }
-
-.hero p{
-    margin-top:10px;
-    font-size:18px;
-}
-
-.hero button{
-    margin-top:20px;
-    padding:12px 25px;
-    border:none;
-    background:#f59e0b;
-    color:white;
-    border-radius:8px;
-    font-size:16px;
-    cursor:pointer;
-}
-
-/* PRODUCTS */
 
 .container{
-    padding:50px;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:40px;
-    font-size:35px;
-    color:#111827;
+    padding:40px;
 }
 
 .products{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
+    gap:20px;
 }
 
 .card{
     background:white;
-    border-radius:15px;
+    border-radius:10px;
     overflow:hidden;
-    box-shadow:0 4px 12px rgba(0,0,0,0.1);
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
 }
 
 .card img{
@@ -128,40 +71,27 @@ nav a:hover{
     text-align:center;
 }
 
-.card-content h3{
-    margin-bottom:10px;
-    color:#111827;
-}
-
 .price{
-    color:#10b981;
+    color:green;
     font-size:20px;
     font-weight:bold;
-    margin-bottom:15px;
 }
 
-.btn{
+button{
     background:#111827;
     color:white;
     border:none;
     padding:10px 20px;
-    border-radius:8px;
     cursor:pointer;
-    transition:0.3s;
+    border-radius:5px;
 }
-
-.btn:hover{
-    background:#f59e0b;
-}
-
-/* FOOTER */
 
 footer{
     background:#111827;
     color:white;
     text-align:center;
     padding:20px;
-    margin-top:50px;
+    margin-top:40px;
 }
 
 </style>
@@ -169,97 +99,74 @@ footer{
 
 <body>
 
-<!-- HEADER -->
-
 <header>
 
-<div class="logo">👟 EasyShop Shoes</div>
+<h2>👟 EasyShop Shoes</h2>
 
 <nav>
     <a href="#">Home</a>
     <a href="#">Nike</a>
     <a href="#">Adidas</a>
     <a href="#">Puma</a>
-    <a href="#">Contact</a>
 </nav>
 
 </header>
 
-<!-- HERO -->
-
-<section class="hero">
-
-<div class="hero-content">
-    <h1>Best Shoes Collection</h1>
-    <p>Shop trendy sneakers and sports shoes</p>
-    <button>Shop Now</button>
+<div class="hero">
+    <h1>Best Trending Shoes Collection</h1>
 </div>
-
-</section>
-
-<!-- PRODUCTS -->
 
 <div class="container">
 
-<h2 class="section-title">🔥 Trending Shoes</h2>
+<h1>🔥 Trending Shoes</h1>
 
 <div class="products">
 
-<!-- SHOE 1 -->
-
 <div class="card">
-    <img src="images/shoe1.jpg" alt="Nike Shoes">
+    <img src="images/shoe1.jpg">
     <div class="card-content">
-        <h3>Nike Air Max</h3>
+        <h2>Nike Air Max</h2>
         <p class="price">₹2,999</p>
-        <button class="btn">Buy Now</button>
+        <button>Buy Now</button>
     </div>
 </div>
 
-<!-- SHOE 2 -->
-
 <div class="card">
-    <img src="images/shoe2.jpg" alt="Adidas Shoes">
+    <img src="images/shoe2.jpg">
     <div class="card-content">
-        <h3>Adidas Sneakers</h3>
+        <h2>Adidas Sneakers</h2>
         <p class="price">₹3,499</p>
-        <button class="btn">Buy Now</button>
+        <button>Buy Now</button>
     </div>
 </div>
 
-<!-- SHOE 3 -->
-
 <div class="card">
-    <img src="images/shoe3.jpg" alt="Puma Shoes">
+    <img src="images/shoe3.jpg">
     <div class="card-content">
-        <h3>Puma Runner</h3>
+        <h2>Puma Runner</h2>
         <p class="price">₹2,799</p>
-        <button class="btn">Buy Now</button>
+        <button>Buy Now</button>
     </div>
 </div>
-
-<!-- SHOE 4 -->
 
 <div class="card">
-    <img src="images/shoe4.jpg" alt="Sports Shoes">
+    <img src="images/shoe4.jpg">
     <div class="card-content">
-        <h3>Sports Sneakers</h3>
+        <h2>Sports Shoes</h2>
         <p class="price">₹3,199</p>
-        <button class="btn">Buy Now</button>
+        <button>Buy Now</button>
     </div>
 </div>
 
 </div>
 
 </div>
-
-<!-- FOOTER -->
 
 <footer>
-    © 2026 EasyShop Shoes | Powered by Watson Assistant 🤖
+© 2026 EasyShop Shoes
 </footer>
 
-<!-- WATSON ASSISTANT -->
+<!-- Watson Assistant -->
 
 <script>
 window.watsonAssistantChatOptions = {
