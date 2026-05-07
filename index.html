@@ -3,173 +3,264 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EasyShop</title>
+<title>EasyShop Shoes</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-body{background:#f5f7fa}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* HEADER */
 
 header{
-  background:#0d1b2a;
-  color:#fff;
-  padding:20px 40px;
-  display:flex;
-  justify-content:space-between;
-  align-items: center;
+    background:#111827;
+    color:white;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
 }
 
 nav a{
-  color:#fff;
-  margin:0 15px;
-  text-decoration:none;
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:16px;
+    transition:0.3s;
 }
+
+nav a:hover{
+    color:#f59e0b;
+}
+
+/* HERO SECTION */
 
 .hero{
-  background:#1b263b;
-  height:250px;
-  display:flex;
-  flex-direction: column;
-  align-items:center;
-  justify-content:center;
-  color:#fff;
-  text-align: center;
+    height:400px;
+    background:url('images/banner.jpg') center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
 }
 
-.container{padding:40px}
+.hero-content{
+    background:rgba(0,0,0,0.6);
+    padding:30px;
+    border-radius:15px;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+.hero button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    background:#f59e0b;
+    color:white;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+/* PRODUCTS */
+
+.container{
+    padding:50px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:35px;
+    color:#111827;
+}
 
 .products{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
 }
 
 .card{
-  background:#fff;
-  border-radius:15px;
-  overflow:hidden;
-  box-shadow:0 4px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+.card:hover{
+    transform:translateY(-8px);
 }
 
 .card img{
-  width:100%;
-  height:200px;
-  object-fit:cover;
+    width:100%;
+    height:250px;
+    object-fit:cover;
 }
 
 .card-content{
-  padding:15px;
-  text-align:center;
+    padding:20px;
+    text-align:center;
 }
 
-.price{color:#2a9d8f;font-weight:bold; font-size: 1.2rem; margin: 10px 0;}
+.card-content h3{
+    margin-bottom:10px;
+    color:#111827;
+}
+
+.price{
+    color:#10b981;
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
 
 .btn{
-  background:#e63946;
-  color:#fff;
-  border:none;
-  padding:10px 20px;
-  border-radius:5px;
-  cursor:pointer;
-  width: 100%;
-  font-weight: 600;
+    background:#111827;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
 }
+
+.btn:hover{
+    background:#f59e0b;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header>
-  <h1>🛒 EasyShop</h1>
-  <nav>
+
+<div class="logo">👟 EasyShop Shoes</div>
+
+<nav>
     <a href="#">Home</a>
-    <a href="#">Electronics</a>
-    <a href="#">Shoes</a>
-    <a href="#">Clothing</a>
-  </nav>
+    <a href="#">Nike</a>
+    <a href="#">Adidas</a>
+    <a href="#">Puma</a>
+    <a href="#">Contact</a>
+</nav>
+
 </header>
 
-<div class="hero">
-  <h2>Shop Smart with EasyShop AI 🤖</h2>
-  <p>Experience the future of personalized shopping</p>
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+    <h1>Best Shoes Collection</h1>
+    <p>Shop trendy sneakers and sports shoes</p>
+    <button>Shop Now</button>
 </div>
+
+</section>
+
+<!-- PRODUCTS -->
 
 <div class="container">
-  <h2 style="margin-bottom: 25px;">🔥 Featured Products</h2>
 
-  <div class="products">
+<h2 class="section-title">🔥 Trending Shoes</h2>
 
-    <!-- Electronics -->
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=500&auto=format&fit=crop" alt="Smartphone">
-      <div class="card-content">
-        <h3>Smartphone</h3>
-        <p class="price">₹10,000</p>
+<div class="products">
+
+<!-- SHOE 1 -->
+
+<div class="card">
+    <img src="images/shoe1.jpg" alt="Nike Shoes">
+    <div class="card-content">
+        <h3>Nike Air Max</h3>
+        <p class="price">₹2,999</p>
         <button class="btn">Buy Now</button>
-      </div>
     </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=500&auto=format&fit=crop" alt="Laptop">
-      <div class="card-content">
-        <h3>Laptop</h3>
-        <p class="price">₹40,000</p>
-        <button class="btn">Buy Now</button>
-      </div>
-    </div>
-
-    <!-- Shoes -->
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=500&auto=format&fit=crop" alt="Running Shoes">
-      <div class="card-content">
-        <h3>Running Shoes</h3>
-        <p class="price">₹2,500</p>
-        <button class="btn">Buy Now</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=500&auto=format&fit=crop" alt="Sneakers">
-      <div class="card-content">
-        <h3>Sneakers</h3>
-        <p class="price">₹3,000</p>
-        <button class="btn">Buy Now</button>
-      </div>
-    </div>
-
-    <!-- Clothing -->
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=500&auto=format&fit=crop" alt="T-Shirt">
-      <div class="card-content">
-        <h3>T-Shirt</h3>
-        <p class="price">₹800</p>
-        <button class="btn">Buy Now</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?q=80&w=500&auto=format&fit=crop" alt="Jeans">
-      <div class="card-content">
-        <h3>Jeans</h3>
-        <p class="price">₹1,500</p>
-        <button class="btn">Buy Now</button>
-      </div>
-    </div>
-
-  </div>
 </div>
 
-<footer style="background:#0d1b2a;color:#fff;text-align:center;padding:20px;margin-top:40px;">
-  © 2026 EasyShop | Powered by AI
+<!-- SHOE 2 -->
+
+<div class="card">
+    <img src="images/shoe2.jpg" alt="Adidas Shoes">
+    <div class="card-content">
+        <h3>Adidas Sneakers</h3>
+        <p class="price">₹3,499</p>
+        <button class="btn">Buy Now</button>
+    </div>
+</div>
+
+<!-- SHOE 3 -->
+
+<div class="card">
+    <img src="images/shoe3.jpg" alt="Puma Shoes">
+    <div class="card-content">
+        <h3>Puma Runner</h3>
+        <p class="price">₹2,799</p>
+        <button class="btn">Buy Now</button>
+    </div>
+</div>
+
+<!-- SHOE 4 -->
+
+<div class="card">
+    <img src="images/shoe4.jpg" alt="Sports Shoes">
+    <div class="card-content">
+        <h3>Sports Sneakers</h3>
+        <p class="price">₹3,199</p>
+        <button class="btn">Buy Now</button>
+    </div>
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+    © 2026 EasyShop Shoes | Powered by Watson Assistant 🤖
 </footer>
 
-<!-- Watson Chatbot -->
+<!-- WATSON ASSISTANT -->
+
 <script>
 window.watsonAssistantChatOptions = {
   integrationID: "4b4b1c05-b5e1-45ce-8447-f4dae399580a",
