@@ -1,134 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EasyShop Shoes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyShop Shoes | Premium Collection</title>
 
-<style>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f3f4f6;
+            color: #333;
+        }
 
-body{
-    margin:0;
-    font-family:Arial;
-    background:#f3f4f6;
-}
+        header {
+            background: #111827;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
 
-header{
-    background:#111827;
-    color:white;
-    padding:20px;
-    text-align:center;
-}
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
 
-.products{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
-    padding:40px;
-}
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 40px 20px;
+        }
 
-.card{
-    background:white;
-    width:250px;
-    border-radius:10px;
-    overflow:hidden;
-    box-shadow:0 0 10px rgba(0,0,0,0.2);
-}
+        .card {
+            background: white;
+            width: 280px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
 
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
+        .card:hover {
+            transform: translateY(-10px);
+        }
 
-.card-content{
-    padding:15px;
-    text-align:center;
-}
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 1px solid #eee;
+        }
 
-.price{
-    color:green;
-    font-weight:bold;
-    font-size:20px;
-}
+        .card-content {
+            padding: 20px;
+            text-align: center;
+        }
 
-button{
-    background:#111827;
-    color:white;
-    border:none;
-    padding:10px 20px;
-    border-radius:5px;
-    cursor:pointer;
-}
+        .card-content h2 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
 
-</style>
+        .price {
+            color: #059669; /* A cleaner emerald green */
+            font-weight: bold;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background: #111827;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            width: 100%;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background: #374151;
+        }
+
+        /* Responsive Fix for small screens */
+        @media (max-width: 600px) {
+            .card {
+                width: 100%;
+                max-width: 320px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-<h1>👟 EasyShop Shoes</h1>
-<p>Best Sneakers Collection</p>
+    <h1>👟 EasyShop Shoes</h1>
+    <p>Premium Sneakers for Every Walk of Life</p>
 </header>
 
 <div class="products">
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600">
-<div class="card-content">
-<h2>Nike Shoes</h2>
-<p class="price">₹2,999</p>
-<button>Buy Now</button>
-</div>
+    <!-- Card 1 -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=600" alt="Red Nike Running Shoe">
+        <div class="card-content">
+            <h2>Nike Air Max</h2>
+            <p class="price">₹2,999</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&q=80&w=600" alt="Classic Adidas Sneakers">
+        <div class="card-content">
+            <h2>Adidas Classic</h2>
+            <p class="price">₹3,499</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&q=80&w=600" alt="Puma Sports Shoes">
+        <div class="card-content">
+            <h2>Puma Runner Pro</h2>
+            <p class="price">₹2,799</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&q=80&w=600" alt="Green Volt Sports Shoes">
+        <div class="card-content">
+            <h2>Volt Sports Edition</h2>
+            <p class="price">₹3,199</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=600">
-<div class="card-content">
-<h2>Adidas Sneakers</h2>
-<p class="price">₹3,499</p>
-<button>Buy Now</button>
-</div>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=600">
-<div class="card-content">
-<h2>Puma Runner</h2>
-<p class="price">₹2,799</p>
-<button>Buy Now</button>
-</div>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=600">
-<div class="card-content">
-<h2>Sports Shoes</h2>
-<p class="price">₹3,199</p>
-<button>Buy Now</button>
-</div>
-</div>
-
-</div>
-
-<!-- Watson Assistant -->
-
+<!-- Watson Assistant Integration -->
 <script>
-window.watsonAssistantChatOptions = {
-  integrationID: "4b4b1c05-b5e1-45ce-8447-f4dae399580a",
-  region: "https://integrations.au-syd.assistant.watson.appdomain.cloud",
-  serviceInstanceID: "cefdacbe-1323-420d-8ae8-9eff2c0e2398",
-  onLoad: async (instance) => { await instance.render(); }
-};
+  window.watsonAssistantChatOptions = {
+    integrationID: "4b4b1c05-b5e1-45ce-8447-f4dae399580a",
+    region: "https://integrations.au-syd.assistant.watson.appdomain.cloud",
+    serviceInstanceID: "cefdacbe-1323-420d-8ae8-9eff2c0e2398",
+    onLoad: async (instance) => { await instance.render(); }
+  };
 
-setTimeout(function(){
-  const t=document.createElement('script');
-  t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" 
-        + (window.watsonAssistantChatOptions.clientVersion || 'latest') 
-        + "/WatsonAssistantChatEntry.js";
-  document.head.appendChild(t);
-});
+  (function() {
+    const t = document.createElement('script');
+    t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + 
+            (window.watsonAssistantChatOptions.clientVersion || 'latest') + 
+            "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  })();
 </script>
 
 </body>
